@@ -13,3 +13,6 @@ All of the following commands are possible inputs to the repl, where ip and port
 If the player feels more comfortable with the terminal, the following command overwrite the commands above by running 'make' and any of these
 - ocamlbuild server.byte -lib unix (after comlpeting, run the following) ./server.byte port
 - ./gui.byte player ip port (player can only be White | Black, and the same restriction apply on who 	connects to the server first).
+
+Acknowledgements:
+Collaborated with Daniel Vicuña (dav74@cornell.edu), Jang Hyun Cho (jc2926@cornell.edu), and William Chen (wlc54).
