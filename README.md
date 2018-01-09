@@ -14,6 +14,7 @@ where port is replaced by the integer of a unused port.
 
 To initiate the game, the user must run the command `make main`, which will start a repl prompting the user for input. 
 The repl gives instruction on what to input. 
+
 NOTE: for correct functioning of the game, the person playing 'white' must run `make main` and finish connecting to the server (once the game pops up you have connected to the server) before the person playing 'black' connects.
 
 All of the following commands are possible inputs to the repl, where ip and port are replaced by the integer values representing the ip and port number of the server respectively:
