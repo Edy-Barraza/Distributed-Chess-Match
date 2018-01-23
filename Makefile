@@ -1,18 +1,22 @@
 compile:
-	ocamlbuild board.byte
-	ocamlbuild -pkgs graphics gui.byte -lib unix
-	ocamlbuild -use-ocamlfind main.byte -pkgs graphics
+	ocamlbuild -use-ocamlfind board.byte gui.byte main.byte
 
 server:
-	ocamlbuild server.byte -lib unix
+	ocamlbuild -use-ocamlfind server.byte
 	./server.byte 12344
 
-white1:
+white:
 	./gui.byte White 127.0.0.1 12344
 
-black1:
+black:
 	./gui.byte Black 127.0.0.1 12344
 
-main: 
-	ocamlbuild -use-ocamlfind main.byte -pkgs graphics
+main:
 	./main.byte
+
+clean:
+	ocamlbuild -clean
+
+test:
+	ocamlbuild -use-ocamlfind test.byte
+	./test.byte

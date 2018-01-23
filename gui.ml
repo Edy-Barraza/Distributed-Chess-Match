@@ -157,7 +157,7 @@ let display_board st sq_opt moves sq_dim =
   clear_graph ();
   set_color gry;
   fill_rect 0 0 700 700;
-  set_window_title "CS 3110 Final Project: Chess";
+  set_window_title "Distributed Chess Match";
   draw_squares sq_dim moves;
   label_board sq_dim;
 (*   let img = get_image 0 0 1000 1000 in
