@@ -7,10 +7,10 @@ server:
 	ocamlbuild server.byte -lib unix
 	./server.byte 12344
 
-white1:
+white:
 	./gui.byte White 127.0.0.1 12344
 
-black1:
+black:
 	./gui.byte Black 127.0.0.1 12344
 
 main: 
